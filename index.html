@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--================= Favicon =================-->
+    <link rel="shortcut icon" href="src/images/logo.png" type="image/x-icon" />
+    <!--================= Title =================-->
+    <title>Salla</title>
+    <!--================= Boxicons Library =================-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="src/Libraries/swiper-bundle.min.css" />
+    <!--================= CSS =================-->
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="src/css/normalize.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
+  <body class="">
+    <header class="header_top">
+      <div class="container">
+        <ul class="contact">
+          <li>
+            <a href="tel:+966556754472" target="_blank" title="Call Now">
+              <i class="bx bx-phone-call"></i>
+              <span>+966556754472</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto: abdelrahmannabeelkassar@gmail.com"
+              target="_blank"
+              title="Email"
+            >
+              <i class="bx bx-envelope"></i>
+              <span>Support@salla.sa</span>
+            </a>
+          </li>
+          <li>
+            <!--theme change button-->
+            <i class="bx bxs-moon change-mode" id="mood-btn"></i>
+          </li>
+        </ul>
+
+        <ul class="nav">
+          <li class="flag">
+            <div class="flag_img">
+              <img src="src/images/flag-saudi.png" alt="" srcset="" />
+            </div>
+            <span> Saudi - Riyal</span>
+          </li>
+
+          <li>
+            <a href="favorite.html">Favorite</a>
+          </li>
+          <li>
+            <a href="return-policy.html">Exchange or Return Policy</a>
+          </li>
+          <li>
+            <a href="#contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <header>
+      <div class="header" id="header">
+        <div class="container grid">
+          <div class="logo">
+            <i class="bx bx-menu nav_toggle open"></i>
+            <a href="#" class="logo">
+              <div class="logo_img">
+                <img src="src/images/logo.png" alt="" srcset="" />
+              </div>
+
+              <h4 class="comp_name">
+                SALLA <br />
+                Store
+              </h4>
+            </a>
+          </div>
+
+          <div class="header_search">
+            <input
+              type="text"
+              class="form_input"
+              placeholder="Search for items..."
+            />
+            <button class="search_btn">
+              <i class="bx bx-search-alt"></i>
+            </button>
+          </div>
+
+          <div class="header_actions">
+            <div class="header_action flex_center actions_user">
+              <div class="action_img flex_center profile avatar">
+                <img src="src/images/user-avatar.jpg" alt="" />
+                <span class="profile_count count">99+</span>
+              </div>
+
+              <div class="content">
+                <div class="user_title">
+                  <span>Hello :</span>
+                  <span class="user_name" id="user_first_name"
+                    >Abdelrahman</span
+                  >
+                </div>
+
+                <div class="login_info">
+                  <a href="login-register.html" class="hover_alert">
+                    Login other account
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <a
+              class="header_action flex_center actions_cart"
+              href="cart.html"
+              target="_blank"
+            >
+              <div class="header_actions flex_center"></div>
+              <div class="action_img flex_center avatar cart">
+                <i class="bx bx-cart"></i>
+                <span class="count">3</span>
+              </div>
+
+              <div class="content">
+                <div class="action_title">Shopping Cart</div>
+                <div>
+                  <span class="mount">1200</span>
+                  <span class="currency">Saudi riyals</span>
+                </div>
+              </div>
+            </a>
+            <!--================= Profile =================-->
+            <div class="profile_tab">
+              <div class="profile_user">
+                <div class="user_info">
+                  <div class="action_img flex_center avatar">
+                    <img src="src/images/user-avatar.jpg" alt="" />
+                  </div>
+                  <div class="user_title">
+                    <span>Hello :</span>
+                    <span class="user_name" id="user_full_name">
+                      Abdelrahman Nabeel
+                    </span>
+                  </div>
+                </div>
+                <div class="close_tab btn">
+                  <i class="bx bx-x"></i>
+                </div>
+              </div>
+              <ul class="profile_items">
+                <li class="profile_item notification">
+                  <a
+                    class="profile_item-link"
+                    href="notification.html"
+                    target="_blank"
+                  >
+                    <div class="item_text">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="17"
+                        viewBox="0 0 14 17"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.7768 11.8428C11.8224 10.8884 11.2862 9.59395 11.2862 8.24422V6.98176C11.2862 4.97355 9.90491 3.28817 8.04062 2.82332V1.54025C8.04062 0.965764 7.57486 0.5 7.00033 0.5C6.42581 0.5 5.96008 0.965764 5.96008 1.54025V2.82329C4.09579 3.28817 2.7145 4.97352 2.7145 6.98172V8.24418C2.7145 9.59391 2.17831 10.8883 1.22391 11.8428C0.804409 12.2623 0.678913 12.8932 0.905947 13.4413C1.13298 13.9894 1.66783 14.3468 2.2611 14.3468H4.84711C4.84711 15.536 5.81116 16.5 7.00033 16.5C8.18951 16.5 9.15355 15.536 9.15355 14.3468H11.7396C12.3328 14.3468 12.8677 13.9894 13.0947 13.4413C13.3218 12.8932 13.1963 12.2623 12.7768 11.8428ZM7.00033 15.4431C6.39583 15.4431 5.90406 14.9513 5.90406 14.3468H8.0966C8.0966 14.9513 7.60484 15.4431 7.00033 15.4431ZM12.1182 13.0368C12.0546 13.1905 11.9059 13.2898 11.7396 13.2898H2.2611C2.09474 13.2898 1.94609 13.1905 1.88243 13.0368C1.81877 12.8831 1.85364 12.7078 1.97128 12.5902C3.13213 11.4293 3.77141 9.88588 3.77141 8.24422V6.98176C3.77141 5.20132 5.2199 3.75284 7.00033 3.75284C8.78077 3.75284 10.2293 5.20132 10.2293 6.98176V8.24422C10.2293 9.88588 10.8686 11.4293 12.0294 12.5902C12.1471 12.7078 12.1819 12.8831 12.1182 13.0368Z"
+                          fill="#666666"
+                        />
+                      </svg>
+                      <span>Notifications</span>
+                    </div>
+                    <div class="notification">99+</div></a
+                  >
+                </li>
+
+                <li class="profile_item orders">
+                  <a
+                    class="profile_item-link"
+                    href="orders.html"
+                    target="_blank"
+                  >
+                    <div class="item_text">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.3913 4.19641L8.32603 0.616502L8.32309 0.615033C8.0085 0.458408 7.63469 0.461908 7.32303 0.624408L4.29275 2.23266C4.26812 2.2431 4.24447 2.25575 4.22181 2.27031L0.5905 4.19756C0.22625 4.38828 0 4.76197 0 5.17325V11.8258C0 12.2371 0.22625 12.6107 0.5905 12.8014L7.32003 16.3731L7.32306 16.3747C7.482 16.4575 7.65716 16.4991 7.83234 16.4991C8.00062 16.4991 8.16897 16.4608 8.32309 16.384L15.3913 12.8026C15.7668 12.6148 16 12.2376 16 11.8177V5.18141C16 4.76144 15.7668 4.38416 15.3913 4.19641ZM7.75741 1.45481C7.80331 1.43125 7.85813 1.43078 7.90444 1.4535L14.5178 4.80444L11.944 6.08585L5.47837 2.66438L7.75741 1.45481ZM7.357 15.3317L1.02844 11.9729L1.02541 11.9713C0.971 11.9429 0.937156 11.8872 0.937156 11.8258V5.59613L7.357 8.94375V15.3317ZM7.83053 8.13375L1.446 4.80453L4.478 3.19538L10.9116 6.59985L7.83053 8.13375ZM15.0628 11.8176C15.0628 11.8803 15.0279 11.9366 14.9718 11.9646L8.29419 15.348V8.94978L11.3687 7.4191V9.02394C11.3687 9.28272 11.5786 9.49253 11.8373 9.49253C12.0961 9.49253 12.3059 9.28272 12.3059 9.02394V6.9525L15.0628 5.58V11.8176Z"
+                          fill="#666666"
+                        />
+                      </svg>
+                      <span>Orders</span>
+                    </div>
+                    <div class="notification">5</div></a
+                  >
+                </li>
+
+                <li class="profile_item panding_orders">
+                  <a
+                    class="profile_item-link"
+                    href="panding_orders.html"
+                    target="_blank"
+                  >
+                    <div class="item_text">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.9734 9.56625L14.7589 2.67825C14.5938 1.7424 13.698 1.11523 12.7623 1.28027L2.34555 3.11706C1.40967 3.28207 0.782529 4.17769 0.947539 5.11354L1.03678 5.61973C0.427284 5.88561 0 6.49372 0 7.20008V14.0223C0 14.9726 0.773129 15.7457 1.72343 15.7457H12.064C13.0143 15.7457 13.7874 14.9726 13.7874 14.0223V11.7017L14.5754 11.5627C15.0287 11.4828 15.4238 11.2311 15.6878 10.854C15.9519 10.4769 16.0533 10.0195 15.9734 9.56625ZM14.9178 10.3148C14.7978 10.4862 14.6182 10.6006 14.4121 10.637L13.7874 10.7471V10.2113V8.07899V7.20005C13.7874 6.24975 13.0143 5.47662 12.064 5.47662H1.96615L1.87333 4.95029C1.83698 4.74423 1.88311 4.53635 2.00312 4.36492C2.12313 4.19351 2.30275 4.07911 2.50881 4.04276L12.9256 2.206C12.9714 2.19791 13.017 2.19403 13.062 2.19403C13.4348 2.19403 13.7662 2.46188 13.8331 2.84144L15.0476 9.72944C15.0839 9.93553 15.0378 10.1434 14.9178 10.3148ZM12.064 14.8056H1.72343C1.29147 14.8056 0.94005 14.4542 0.94005 14.0223V10.6814H12.8474V14.0222C12.8474 14.4542 12.4959 14.8056 12.064 14.8056ZM1.72343 6.4167H12.064C12.4959 6.4167 12.8474 6.76812 12.8474 7.20008V7.609H0.94005V7.20008C0.94005 6.76812 1.29147 6.4167 1.72343 6.4167ZM12.8474 8.54905V9.74135H0.94005V8.54905H12.8474Z"
+                          fill="#666666"
+                        />
+                        <path
+                          d="M4.52425 12.918H2.3919C2.13232 12.918 1.92188 13.1284 1.92188 13.388C1.92188 13.6476 2.13232 13.858 2.3919 13.858H4.52425C4.78383 13.858 4.99427 13.6476 4.99427 13.388C4.99427 13.1284 4.78383 12.918 4.52425 12.918Z"
+                          fill="#666666"
+                        />
+                      </svg>
+                      <span>Pending Orders</span>
+                    </div>
+                    <div class="notification"></div
+                  ></a>
+                </li>
+
+                <li class="profile_item reviews">
+                  <a
+                    class="profile_item-link"
+                    href="reviews.html"
+                    target="_blank"
+                  >
+                    <div class="item_text">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.977 6.66286C15.9219 6.49315 15.7752 6.36949 15.5987 6.34383L10.6386 5.62305L8.42035 1.12847C8.34139 0.968469 8.17845 0.867188 8.00001 0.867188C7.82161 0.867188 7.65864 0.9685 7.57967 1.12847L5.3613 5.62308L0.40134 6.34383C0.224777 6.36949 0.0780902 6.49318 0.0229653 6.66286C-0.0321909 6.83255 0.013809 7.01883 0.141559 7.14336L3.73055 10.642L2.88343 15.582C2.85327 15.7579 2.92558 15.9356 3.06993 16.0405C3.21424 16.1453 3.40555 16.1592 3.56358 16.0762L7.99998 13.7438L12.4363 16.0762C12.5048 16.1123 12.5797 16.13 12.6543 16.13C12.7515 16.13 12.8483 16.0998 12.9299 16.0405C13.0743 15.9356 13.1466 15.7579 13.1164 15.582L12.269 10.642L15.8584 7.14339C15.9862 7.01883 16.0322 6.83255 15.977 6.66286ZM11.4382 10.1426C11.3277 10.2503 11.2773 10.4055 11.3034 10.5575L12.0318 14.8043L8.21817 12.7993C8.08161 12.7275 7.91845 12.7275 7.78189 12.7993L3.96799 14.8044L4.69624 10.5575C4.7223 10.4055 4.67189 10.2503 4.56146 10.1426L1.47612 7.13502L5.74002 6.51536C5.8927 6.49318 6.02464 6.3973 6.09295 6.25896L7.99998 2.39503L9.90695 6.25893C9.97526 6.39727 10.1072 6.49318 10.2599 6.51536L14.5238 7.13499L11.4382 10.1426Z"
+                          fill="#666666"
+                        />
+                      </svg>
+                      <span>Reviews</span>
+                    </div>
+                    <div class="notification"></div
+                  ></a>
+                </li>
+
+                <li class="profile_item favorite">
+                  <a
+                    class="profile_item-link"
+                    href="favorite.html"
+                    target="_blank"
+                  >
+                    <div class="item_text">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="15"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                      >
+                        <path
+                          d="M11.6875 0.476562C10.3566 0.476562 9.18981 1.07003 8.31341 2.19284C8.19653 2.34259 8.09234 2.49241 8 2.6375C7.90766 2.49238 7.80347 2.34259 7.68659 2.19284C6.81019 1.07003 5.64344 0.476562 4.3125 0.476562C1.79825 0.476562 0 2.58178 0 5.10794C0 7.99647 2.36741 10.7188 7.67616 13.9348C7.77569 13.9951 7.88784 14.0252 8 14.0252C8.11216 14.0252 8.22431 13.9951 8.32384 13.9348C13.6326 10.7188 16 7.9965 16 5.10797C16 2.58312 14.2032 0.476562 11.6875 0.476562ZM13.0987 8.70466C11.9934 9.93784 10.3233 11.2363 8 12.6679C5.67672 11.2363 4.00656 9.93784 2.90134 8.70469C1.79016 7.46481 1.25 6.28831 1.25 5.10797C1.25 3.28909 2.47919 1.72656 4.3125 1.72656C5.24612 1.72656 6.04219 2.1325 6.67859 2.93313C7.18747 3.57341 7.40188 4.23456 7.40338 4.23928C7.48478 4.50038 7.72653 4.67822 8.00003 4.67822C8.27353 4.67822 8.51528 4.50041 8.59669 4.23928C8.59866 4.23297 8.80663 3.59244 9.29878 2.96194C9.93863 2.14219 10.7423 1.72653 11.6875 1.72653C13.5228 1.72653 14.75 3.29056 14.75 5.10794C14.75 6.28828 14.2098 7.46478 13.0987 8.70466Z"
+                          fill="#666666"
+                        />
+                      </svg>
+                      <span>Favorite</span>
+                    </div>
+                    <div class="notification">15</div></a
+                  >
+                </li>
+                <li class="profile_item settings">
+                  <a
+                    class="profile_item-link"
+                    href="settings.html"
+                    target="_blank"
+                  >
+                    <div class="item_text settings">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1)"
+                      >
+                        <path
+                          d="M12 16c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.084 0 2 .916 2 2s-.916 2-2 2-2-.916-2-2 .916-2 2-2z"
+                        ></path>
+                        <path
+                          d="m2.845 16.136 1 1.73c.531.917 1.809 1.261 2.73.73l.529-.306A8.1 8.1 0 0 0 9 19.402V20c0 1.103.897 2 2 2h2c1.103 0 2-.897 2-2v-.598a8.132 8.132 0 0 0 1.896-1.111l.529.306c.923.53 2.198.188 2.731-.731l.999-1.729a2.001 2.001 0 0 0-.731-2.732l-.505-.292a7.718 7.718 0 0 0 0-2.224l.505-.292a2.002 2.002 0 0 0 .731-2.732l-.999-1.729c-.531-.92-1.808-1.265-2.731-.732l-.529.306A8.1 8.1 0 0 0 15 4.598V4c0-1.103-.897-2-2-2h-2c-1.103 0-2 .897-2 2v.598a8.132 8.132 0 0 0-1.896 1.111l-.529-.306c-.924-.531-2.2-.187-2.731.732l-.999 1.729a2.001 2.001 0 0 0 .731 2.732l.505.292a7.683 7.683 0 0 0 0 2.223l-.505.292a2.003 2.003 0 0 0-.731 2.733zm3.326-2.758A5.703 5.703 0 0 1 6 12c0-.462.058-.926.17-1.378a.999.999 0 0 0-.47-1.108l-1.123-.65.998-1.729 1.145.662a.997.997 0 0 0 1.188-.142 6.071 6.071 0 0 1 2.384-1.399A1 1 0 0 0 11 5.3V4h2v1.3a1 1 0 0 0 .708.956 6.083 6.083 0 0 1 2.384 1.399.999.999 0 0 0 1.188.142l1.144-.661 1 1.729-1.124.649a1 1 0 0 0-.47 1.108c.112.452.17.916.17 1.378 0 .461-.058.925-.171 1.378a1 1 0 0 0 .471 1.108l1.123.649-.998 1.729-1.145-.661a.996.996 0 0 0-1.188.142 6.071 6.071 0 0 1-2.384 1.399A1 1 0 0 0 13 18.7l.002 1.3H11v-1.3a1 1 0 0 0-.708-.956 6.083 6.083 0 0 1-2.384-1.399.992.992 0 0 0-1.188-.141l-1.144.662-1-1.729 1.124-.651a1 1 0 0 0 .471-1.108z"
+                        ></path>
+                      </svg>
+                      <span>Settings</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="profile_item account">
+                  <a
+                    class="profile_item-link"
+                    href="account.html"
+                    target="_blank"
+                  >
+                    <div class="item_text">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                      >
+                        <path
+                          d="M8.00002 8.9987C5.88669 8.9987 4.16669 7.2787 4.16669 5.16536C4.16669 3.05203 5.88669 1.33203 8.00002 1.33203C10.1134 1.33203 11.8334 3.05203 11.8334 5.16536C11.8334 7.2787 10.1134 8.9987 8.00002 8.9987ZM8.00002 2.33203C6.44002 2.33203 5.16669 3.60536 5.16669 5.16536C5.16669 6.72536 6.44002 7.9987 8.00002 7.9987C9.56002 7.9987 10.8334 6.72536 10.8334 5.16536C10.8334 3.60536 9.56002 2.33203 8.00002 2.33203Z"
+                          fill="#666666"
+                        />
+                        <path
+                          d="M13.7268 15.6667C13.4534 15.6667 13.2268 15.44 13.2268 15.1667C13.2268 12.8667 10.8801 11 8.0001 11C5.1201 11 2.77344 12.8667 2.77344 15.1667C2.77344 15.44 2.54677 15.6667 2.27344 15.6667C2.0001 15.6667 1.77344 15.44 1.77344 15.1667C1.77344 12.32 4.56677 10 8.0001 10C11.4334 10 14.2268 12.32 14.2268 15.1667C14.2268 15.44 14.0001 15.6667 13.7268 15.6667Z"
+                          fill="#666666"
+                        />
+                      </svg>
+                      <span>My Account</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="profile_item profile-login">
+                  <a
+                    class="profile_item-link"
+                    href="login-register.html"
+                    target="_blank"
+                  >
+                    <div class="item_text">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_6341_11169)">
+                          <path
+                            d="M11.3125 12.75V14C11.3125 15.3785 10.191 16.5 8.8125 16.5H2.53125C1.15271 16.5 0.03125 15.3785 0.03125 14V3C0.03125 1.62146 1.15271 0.5 2.53125 0.5H8.8125C10.191 0.5 11.3125 1.62146 11.3125 3V4.25C11.3125 4.59521 11.0327 4.875 10.6875 4.875C10.3423 4.875 10.0625 4.59521 10.0625 4.25V3C10.0625 2.31079 9.50171 1.75 8.8125 1.75H2.53125C1.84204 1.75 1.28125 2.31079 1.28125 3V14C1.28125 14.6892 1.84204 15.25 2.53125 15.25H8.8125C9.50171 15.25 10.0625 14.6892 10.0625 14V12.75C10.0625 12.4048 10.3423 12.125 10.6875 12.125C11.0327 12.125 11.3125 12.4048 11.3125 12.75ZM15.5736 7.42639L14.1741 6.02686C13.9299 5.78271 13.5342 5.78271 13.2902 6.02686C13.046 6.27087 13.046 6.66663 13.2902 6.91064L14.2856 7.90625H6.78125C6.43604 7.90625 6.15625 8.18604 6.15625 8.53125C6.15625 8.87646 6.43604 9.15625 6.78125 9.15625H14.2856L13.2902 10.1519C13.046 10.3959 13.046 10.7916 13.2902 11.0356C13.4122 11.1577 13.5721 11.2188 13.7321 11.2188C13.8921 11.2188 14.052 11.1577 14.1741 11.0356L15.5736 9.63611C16.1829 9.02686 16.1829 8.03564 15.5736 7.42639Z"
+                            fill="#F55157"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_6341_11169">
+                            <rect
+                              width="16"
+                              height="16"
+                              fill="white"
+                              transform="translate(0 0.5)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span>Login other account</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="language_container">
+                <div class="change_language">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>change language</title>
+                    <g fill="#54595d">
+                      <path
+                        d="M20 18h-1.44a.61.61 0 0 1-.4-.12.81.81 0 0 1-.23-.31L17 15h-5l-1 2.54a.77.77 0 0 1-.22.3.59.59 0 0 1-.4.14H9l4.55-11.47h1.89zm-3.53-4.31L14.89 9.5a11.62 11.62 0 0 1-.39-1.24q-.09.37-.19.69l-.19.56-1.58 4.19zm-6.3-1.58a13.43 13.43 0 0 1-2.91-1.41 11.46 11.46 0 0 0 2.81-5.37H12V4H7.31a4 4 0 0 0-.2-.56C6.87 2.79 6.6 2 6.6 2l-1.47.5s.4.89.6 1.5H0v1.33h2.15A11.23 11.23 0 0 0 5 10.7a17.19 17.19 0 0 1-5 2.1q.56.82.87 1.38a23.28 23.28 0 0 0 5.22-2.51 15.64 15.64 0 0 0 3.56 1.77zM3.63 5.33h4.91a8.11 8.11 0 0 1-2.45 4.45 9.11 9.11 0 0 1-2.46-4.45z"
+                      />
+                    </g>
+                  </svg>
+                  <span>Change Languages</span>
+                </div>
+                <div class="language_btns">
+                  <a href="index-rtl.html" class="language_btn btn active">
+                    <div class="Flag_container">
+                      <div class="flag_img">
+                        <img src="src/images/flag-us.png" alt="" srcset="" />
+                      </div>
+                      <span>English</span>
+                    </div>
+                    <span>USD</span>
+                  </a>
+
+                  <a href="index-rtl.html" class="language_btn btn">
+                    <div class="Flag_container">
+                      <div class="flag_img">
+                        <img src="src/images/flag-saudi.png" alt="" srcset="" />
+                      </div>
+                      <div>العربية</div>
+                    </div>
+                    <div>ر.س</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <div class="container">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#">All Products </a>
+              <i class="bx bx-chevron-down"></i>
+            </li>
+            <li class="nav_item">
+              <a href="#">Electronics </a>
+              <i class="bx bx-chevron-down"></i>
+            </li>
+            <li class="nav_item">
+              <a href="#">Phones </a>
+              <i class="bx bx-chevron-down"></i>
+            </li>
+            <li class="nav_item">
+              <a href="#">Digital Cameras </a>
+              <i class="bx bx-chevron-down"></i>
+            </li>
+            <li class="nav_item">
+              <a href="#">Speakers </a>
+              <i class="bx bx-chevron-down"></i>
+            </li>
+            <li class="nav_item">
+              <a href="#">Accessories </a>
+              <i class="bx bx-chevron-down"></i>
+            </li>
+            <li class="nav_item">
+              <a href="#">Computer Monitors </a>
+              <i class="bx bx-chevron-down"></i>
+            </li>
+            <li class="nav_item">
+              <a href="#"> Digital Speakers</a>
+              <i class="bx bx-chevron-down"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--================= PAGES =================-->
+    <main class="page">
+      <!--================= Home Page =================-->
+      <section class="home_page">
+        <div class="swiper swiper-homePage">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="swiper_content swiper-home_page"
+                style="background-image: url(src/images/homePage-01.png)"
+              >
+                <div class="container slide_img">
+                  <div class="container-home_img">
+                    <img src="./src/images/lap.png" alt="" />
+                  </div>
+                  <div class="container-home_content">
+                    <h2 class="home_title">The Best Discounts of 2024</h2>
+                    <p class="home_description">
+                      Salla store offers you everything you need in terms of
+                      electronics or home furniture, in addition to the best
+                      discounts on products. Shop now and enjoy all the
+                      discounts on products.
+                    </p>
+                    <a href="#" class="home_btn btn_design btn"
+                      >Discover more.
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="swiper_content swiper-home_page"
+                style="background-image: url(src/images/homePage-02.png)"
+              >
+                <div class="container slide_img">
+                  <div class="container-home_content m_left">
+                    <h2 class="home_title">The Best Discounts of 2024</h2>
+                    <p class="home_description">
+                      Salla store offers you everything you need in terms of
+                      electronics or home furniture, in addition to the best
+                      discounts on products. Shop now and enjoy all the
+                      discounts on products.
+                    </p>
+                    <a href="#" class="home_btn btn_design btn"
+                      >Discover more.
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="swiper_content swiper-home_page"
+                style="background-image: url(src/images/homePage-05.png)"
+              >
+                <div class="container slide_img">
+                  <div class="container-home_content">
+                    <h2 class="home_title">The Best Discounts of 2024</h2>
+                    <p class="home_description">
+                      Salla store offers you everything you need in terms of
+                      electronics or home furniture, in addition to the best
+                      discounts on products. Shop now and enjoy all the
+                      discounts on products.
+                    </p>
+                    <a href="#" class="home_btn btn_design btn"
+                      >Discover more.
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_next">
+            <i class="bx bx-chevron-right"></i>
+          </div>
+
+          <div class="btn_prev">
+            <i class="bx bx-chevron-left"></i>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!--================= Services =================-->
+      <section class="services">
+        <div class="container">
+          <div class="service_box btn">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="48"
+                height="48"
+              >
+                <path
+                  d="M15.3709 3.43994L18.5819 9.00194L22.0049 9.00212V11.0021L20.8379 11.0019L20.0813 20.0852C20.0381 20.6035 19.6048 21.0021 19.0847 21.0021H4.92502C4.40493 21.0021 3.97166 20.6035 3.92847 20.0852L3.17088 11.0019L2.00488 11.0021V9.00212L5.42688 9.00194L8.63886 3.43994L10.3709 4.43994L7.73688 9.00194H16.2719L13.6389 4.43994L15.3709 3.43994ZM18.8309 11.0019L5.17788 11.0021L5.84488 19.0021H18.1639L18.8309 11.0019ZM13.0049 13.0021V17.0021H11.0049V13.0021H13.0049ZM9.00488 13.0021V17.0021H7.00488V13.0021H9.00488ZM17.0049 13.0021V17.0021H15.0049V13.0021H17.0049Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="text_box">
+              <h3 class="srv_title">The Best Discounts</h3>
+              <span> Installment plans up to 12 months</span>
+            </div>
+          </div>
+
+          <div class="service_box btn">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="48"
+                height="48"
+              >
+                <path
+                  d="M8.96456 18C8.72194 19.6961 7.26324 21 5.5 21C3.73676 21 2.27806 19.6961 2.03544 18H1V6C1 5.44772 1.44772 5 2 5H16C16.5523 5 17 5.44772 17 6V8H20L23 12.0557V18H20.9646C20.7219 19.6961 19.2632 21 17.5 21C15.7368 21 14.2781 19.6961 14.0354 18H8.96456ZM15 7H3V15.0505C3.63526 14.4022 4.52066 14 5.5 14C6.8962 14 8.10145 14.8175 8.66318 16H14.3368C14.5045 15.647 14.7296 15.3264 15 15.0505V7ZM17 13H21V12.715L18.9917 10H17V13ZM17.5 19C18.1531 19 18.7087 18.5826 18.9146 18C18.9699 17.8436 19 17.6753 19 17.5C19 16.6716 18.3284 16 17.5 16C16.6716 16 16 16.6716 16 17.5C16 17.6753 16.0301 17.8436 16.0854 18C16.2913 18.5826 16.8469 19 17.5 19ZM7 17.5C7 16.6716 6.32843 16 5.5 16C4.67157 16 4 16.6716 4 17.5C4 17.6753 4.03008 17.8436 4.08535 18C4.29127 18.5826 4.84689 19 5.5 19C6.15311 19 6.70873 18.5826 6.91465 18C6.96992 17.8436 7 17.6753 7 17.5Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="text_box">
+              <h3 class="srv_title">Guaranteed Products</h3>
+              <span class="srv_description">
+                Installment plans up to 12 months</span
+              >
+            </div>
+          </div>
+
+          <div class="service_box btn">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="41"
+                height="41"
+                viewBox="0 0 41 41"
+                fill="none"
+              >
+                <path
+                  d="M26.5859 9.5625H14.0859C11.5013 9.5625 9.39844 11.6653 9.39844 14.25V26.75C9.39844 29.3347 11.5013 31.4375 14.0859 31.4375H26.5859C29.1706 31.4375 31.2734 29.3347 31.2734 26.75V14.25C31.2734 11.6653 29.1706 9.5625 26.5859 9.5625ZM28.1484 26.75C28.1484 27.6116 27.4475 28.3125 26.5859 28.3125H14.0859C13.2244 28.3125 12.5234 27.6116 12.5234 26.75V14.25C12.5234 13.3884 13.2244 12.6875 14.0859 12.6875H18.7734V17.375C18.7734 18.238 19.473 18.9375 20.3359 18.9375C21.1989 18.9375 21.8984 18.238 21.8984 17.375V12.6875H26.5859C27.4475 12.6875 28.1484 13.3884 28.1484 14.25V26.75Z"
+                  fill="#62D0B6"
+                />
+                <path
+                  d="M35.9609 3.3125C35.098 3.3125 34.3984 4.01203 34.3984 4.875V5.88805C33.1047 4.67664 31.6421 3.63961 30.054 2.81562C27.1341 1.30078 23.7735 0.5 20.3359 0.5C9.12094 0.5 0.335938 9.28508 0.335938 20.5C0.335938 21.6347 0.430391 22.7731 0.616719 23.8836C0.744922 24.6471 1.40648 25.1878 2.15586 25.1877C2.24172 25.1877 2.32875 25.1806 2.41625 25.1659C3.26734 25.0231 3.84141 24.2175 3.69867 23.3664C3.54086 22.4264 3.46094 21.462 3.46094 20.5C3.46094 11.0373 10.8734 3.625 20.3359 3.625C26.3239 3.625 31.5448 6.31203 34.6598 10.997C35.0413 11.5708 35.7534 11.8268 36.4128 11.6277C37.0722 11.4284 37.5234 10.8208 37.5234 10.1319V4.875C37.5234 4.01203 36.8239 3.3125 35.9609 3.3125Z"
+                  fill="#62D0B6"
+                />
+                <path
+                  d="M20.3359 40.5002C16.8984 40.5002 13.5378 39.6995 10.6179 38.1845C9.02977 37.3606 7.56719 36.3236 6.27344 35.1122V36.1252C6.27344 36.9882 5.57391 37.6877 4.71094 37.6877C3.84797 37.6877 3.14844 36.9882 3.14844 36.1252V30.8684C3.14844 30.1795 3.59961 29.5719 4.25906 29.3726C4.91836 29.1735 5.63063 29.4295 6.01203 30.0032C9.12711 34.6882 14.348 37.3752 20.3359 37.3752C29.7985 37.3752 37.2109 29.9629 37.2109 20.5002C37.2109 19.5383 37.131 18.5738 36.9732 17.6338C36.8305 16.7827 37.4045 15.9771 38.2556 15.8343C39.107 15.6914 39.9123 16.2656 40.0552 17.1167C40.2415 18.2271 40.3359 19.3656 40.3359 20.5002C40.3359 31.7152 31.5509 40.5002 20.3359 40.5002Z"
+                  fill="#62D0B6"
+                />
+              </svg>
+            </div>
+            <div class="text_box">
+              <h3 class="srv_title">Free Shipping</h3>
+              <span class="srv_description">
+                Installment plans up to 12 months
+              </span>
+            </div>
+          </div>
+
+          <div class="service_box btn">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="41"
+                height="35"
+                viewBox="0 0 41 35"
+                fill="none"
+              >
+                <path
+                  d="M35.9805 0.3125H11.6055C9.02078 0.3125 6.91797 2.41531 6.91797 5C6.91797 5.86297 7.6175 6.5625 8.48047 6.5625C9.34344 6.5625 10.043 5.86297 10.043 5C10.043 4.13844 10.7439 3.4375 11.6055 3.4375H35.9805C36.842 3.4375 37.543 4.13844 37.543 5V20.625C37.543 21.4866 36.842 22.1875 35.9805 22.1875H34.418V14.375C34.418 11.7903 32.3152 9.6875 29.7305 9.6875H5.35547C2.77078 9.6875 0.667969 11.7903 0.667969 14.375V30C0.667969 32.5847 2.77078 34.6875 5.35547 34.6875H29.7305C32.3152 34.6875 34.418 32.5847 34.418 30V25.3125H35.9805C38.5652 25.3125 40.668 23.2097 40.668 20.625V5C40.668 2.41531 38.5652 0.3125 35.9805 0.3125ZM31.293 30C31.293 30.8616 30.592 31.5625 29.7305 31.5625H5.35547C4.49391 31.5625 3.79297 30.8616 3.79297 30V14.375C3.79297 13.5134 4.49391 12.8125 5.35547 12.8125H29.7305C30.592 12.8125 31.293 13.5134 31.293 14.375V15.9375H8.48047C7.6175 15.9375 6.91797 16.637 6.91797 17.5C6.91797 18.363 7.6175 19.0625 8.48047 19.0625H31.293V30Z"
+                  fill="#62D0B6"
+                />
+                <path
+                  d="M26.6055 28.4375H20.3555C19.4925 28.4375 18.793 27.738 18.793 26.875C18.793 26.012 19.4925 25.3125 20.3555 25.3125H26.6055C27.4684 25.3125 28.168 26.012 28.168 26.875C28.168 27.738 27.4684 28.4375 26.6055 28.4375Z"
+                  fill="#62D0B6"
+                />
+              </svg>
+            </div>
+            <div class="text_box">
+              <h3 class="srv_title">Secure Payments</h3>
+              <span class="srv_description">
+                Installment plans up to 12 months</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================= Sponsored =================-->
+      <section class="sponsored">
+        <div class="cards_container container">
+          <div class="flip_card">
+            <div class="front">
+              <h3 class="srv_title bg_blur">Apple AirPods Max</h3>
+
+              <img src="src/images/sponsored-01-flip.jpg" alt="" srcset="" />
+            </div>
+
+            <div class="back">
+              <div class="back_content">
+                <div class="img">
+                  <img
+                    class=""
+                    src="src/images/sponsored-01-flip.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="content bg_blur">
+                  <div class="img">
+                    <img src="./src/images/sponsored-01-1.png" alt="" />
+                  </div>
+                  <div class="text_box">
+                    <h3 class="srv_title">Apple AirPods Max</h3>
+                    <span class="srv_description"
+                      >Active Noise Cancelling, Personalized Spatial Audio,
+                      Dolby Atmos</span
+                    >
+                    <div class="order_box">
+                      <div class="product_price flex">
+                        <span class="new_price">$280</span>
+                        <del class="old_price">$320</del>
+                      </div>
+                      <a href="#" class=""> Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip_card">
+            <div class="front">
+              <h3 class="srv_title bg_blur">Apple AirPods Max</h3>
+
+              <img src="src/images/sponsored-01-flip.jpg" alt="" srcset="" />
+            </div>
+
+            <div class="back">
+              <div class="back_content">
+                <div class="img">
+                  <img
+                    class=""
+                    src="src/images/sponsored-01-flip.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="content bg_blur">
+                  <div class="img">
+                    <img src="./src/images/sponsored-01-1.png" alt="" />
+                  </div>
+                  <div class="text_box">
+                    <h3 class="srv_title">Apple AirPods Max</h3>
+                    <span class="srv_description"
+                      >Active Noise Cancelling, Personalized Spatial Audio,
+                      Dolby Atmos</span
+                    >
+                    <div class="order_box">
+                      <div class="product_price flex">
+                        <span class="new_price">$280</span>
+                        <del class="old_price">$320</del>
+                      </div>
+                      <a href="#" class=""> Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip_card">
+            <div class="front">
+              <h3 class="srv_title bg_blur">Samsung Galaxy S23 Ultra</h3>
+
+              <img src="src/images/sponsored-02-flip.jpg" alt="" srcset="" />
+            </div>
+
+            <div class="back">
+              <div class="back_content">
+                <div class="img">
+                  <img
+                    class=""
+                    src="src/images/sponsored-02-flip.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="content bg_blur">
+                  <div class="img">
+                    <img src="./src/images/sponsored-02-1.png" alt="" />
+                  </div>
+                  <div class="text_box">
+                    <h3 class="srv_title">Samsung Galaxy S23 Ultra</h3>
+                    <span class="srv_description"
+                      >256GB, 12 GB RAM, Mobile Phone, Dual SIM</span
+                    >
+                    <div class="order_box">
+                      <div class="product_price flex">
+                        <span class="new_price">$280</span>
+                        <del class="old_price">$320</del>
+                      </div>
+                      <a href="#" class=""> Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip_card">
+            <div class="front">
+              <h3 class="srv_title bg_blur">Samsung Galaxy S23 Ultra</h3>
+
+              <img src="src/images/sponsored-02-flip.jpg" alt="" srcset="" />
+            </div>
+
+            <div class="back">
+              <div class="back_content">
+                <div class="img">
+                  <img
+                    class=""
+                    src="src/images/sponsored-02-flip.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="content bg_blur">
+                  <div class="img">
+                    <img src="./src/images/sponsored-02-1.png" alt="" />
+                  </div>
+                  <div class="text_box">
+                    <h3 class="srv_title">Samsung Galaxy S23 Ultra</h3>
+                    <span class="srv_description"
+                      >256GB, 12 GB RAM, Mobile Phone, Dual SIM</span
+                    >
+                    <div class="order_box">
+                      <div class="product_price flex">
+                        <span class="new_price">$280</span>
+                        <del class="old_price">$320</del>
+                      </div>
+                      <a href="#" class=""> Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================= Announcement =================-->
+
+      <section class="announcement">
+        <div class="container">
+          <a href="#" class="content">
+            <div class="img">
+              <img src="src/images/announcement-01.png" alt="" srcset="" />
+            </div>
+            <div class="text_box">
+              <h3 class="srv_title">Apple AirPods Max</h3>
+              <span class="srv_description"
+                >Active Noise Cancelling, Personalized Spatial Audio, Dolby
+                Atmos</span
+              >
+            </div></a
+          >
+          <a href="#" class="content">
+            <div class="img">
+              <img src="src/images/announcement-02.png" alt="" srcset="" />
+            </div>
+            <div class="text_box">
+              <h3 class="srv_title">Samsung Galaxy S23 Ultra</h3>
+              <span class="srv_description"
+                >256GB, 12 GB RAM, Mobile Phone, Dual SIM</span
+              >
+            </div></a
+          >
+        </div>
+      </section>
+    </main>
+    <!--================= js =================-->
+    <!-- Main -->
+    <script src="src/Libraries/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="src/js/main.js"></script>
+  </body>
+</html>

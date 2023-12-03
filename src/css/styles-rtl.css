@@ -1,0 +1,60 @@
+/*=============== header top  ===============*/
+.header_top .container ul li:not(:last-child) {
+  border-left: 1px solid;
+  border-right: none;
+}
+/*=============== HEADER  ===============*/
+@media screen and (max-width: 1200px) {
+  .header .comp_name {
+    font-size: var(--h4-font-size); /*need to change in ltr*/
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .comp_name {
+    font-size: var(--small-font-size); /*need to change in ltr*/
+  }
+}
+.search_btn {
+  right: auto; /*need to change in ltr*/
+  left: 1.25rem; /*need to change in ltr*/
+}
+
+@media screen and (max-width: 576px) {
+  .header .action_img .count {
+    right: auto; /*need to change in ltr*/
+    left: -1px; /*need to change in ltr*/
+  }
+}
+/* ===== toggle  =====*/
+
+/*=============== Profile ===============*/
+.profile_tab {
+  right: auto; /* need to change in ltr*/
+  left: -350px; /* need to change in ltr*/
+}
+.profile_tab.active {
+  right: auto; /* need to change in ltr*/
+  left: 0; /* need to change in ltr*/
+}
+@media screen and (max-width: 576px) {
+  .profile_tab {
+    right: auto; /* need to change in ltr*/
+    left: 0; /* need to change in ltr*/
+  }
+}
+.profile_item:hover .item_text {
+  padding-right: 1rem; /*need to change in ltr*/
+}
+/*=============== Change Language ===============*/
+
+.Flag_container {
+  padding-right: 0; /*need to change in ltr*/
+  border-right: none; /*need to change in ltr*/
+  padding-left: 0.4rem;
+  border-left: 1px solid var(--text-color-alt);
+}
+
+.front .srv_title {
+  left: auto; /*need to change in rtl*/
+  right: 0; /*need to change in rtl*/
+}
